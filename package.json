@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/daniesbw/greeting_package/issues"
   },
-  "homepage": "https://github.com/daniesbw/greeting_package#readme"
+  "homepage": "https://github.com/daniesbw/greeting_package#readme",
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
 }
