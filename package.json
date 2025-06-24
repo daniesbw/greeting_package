@@ -12,14 +12,14 @@
     "require": {
       "default": "./lib/index.cjs",
       "types": "./lib/types/index.d.ts"
-
     }
   },
-  "files":[
+  "files": [
     "lib"
   ],
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "release-package": "npm run build && npx changeset publish"
   },
   "repository": {
     "type": "git",
@@ -32,6 +32,7 @@
   },
   "homepage": "https://github.com/daniesbw/greeting_package#readme",
   "devDependencies": {
+    "@changesets/cli": "^2.29.4",
     "rollup": "^4.17.2",
     "rollup-plugin-delete": "^2.0.0",
     "rollup-plugin-typescript2": "^0.36.0",
